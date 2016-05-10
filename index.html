@@ -1,18 +1,53 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-US">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+<title>Will Burton</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css" media="screen">
+body{
+  color: #000;
+  font: 18px "Iowan Old Style", Palatino, Georgia, Times, serif;
+  font-weight: 100;
+  line-height: 1.3em;
+}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+div#content {
+  width: 90%;
+  max-width: 600px;
+  margin: 48px auto 0 auto;
+}
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+div#image {
+  text-align: center;
+  margin:  0;
+  padding: 0;
+}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+#image img {
+  display: inline;
+  margin:  0;
+  padding: 0;
+}
+
+span.nowrap {
+  padding-left: 0;
+  white-space: nowrap;
+}
+
+div#copy {
+  font: 12px Avenir, "Gill Sans", "Franklin Gothic", Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 48px;
+}
+
+h1 {
+  font: 2.3em Avenir, "Gill Sans", "Franklin Gothic", Helvetica, sans-serif;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  vertical-align: text-bottom;
+}
