@@ -38,7 +38,7 @@ To help bring forth insights from the graphs created, we also make a table locat
 
 Now to answer the initial question using the app:  
 1. Who is the most popular cast and crew member?  
-  This isn't really a straight forward question as it's highly dependent on time and genre, plus you could use a slew of popularity metrics.. but to keep it simple we'll say movies tagged with 'Comedy' from the last 5 years (2012-11-01:2017-11-01), and for a popularity metric I use a normalized degree (number of connections/total possible number of connections). The Number of movies was set 200 for this network to try to be as accurate as possible, though it is not recommended since it will create a massive network with heavy lag, and take a few minutes to query.  
+  This isn't really a straight forward question as it's highly dependent on time and genre, plus you could use a slew of popularity metrics.. but to keep it simple we'll say movies tagged with 'Comedy' from the last 5 years (2012-11-01:2017-11-01), and for a popularity metric I use a normalized degree (number of connections/total possible number of connections). The Number of movies was set 200 for this network to try to be as accurate as possible. Using 200 is not recommended with the embedded ap on the page, it will break if the network requested to build becomes too large.  
 The resulting top cast is shown in the table below, ordered by degree centrality:
 !['Cast table']({{"/assets/Cast_table2.png" | absolute_url}})
 <br>
@@ -49,21 +49,9 @@ And corresponding table of the most popular crew members:
 !['Creq table']({{"/assets/crew_table.png" | absolute_url}})
 
 
-
-The Code for the application can be found on github here.
-
+Instead of finishing off the remainder of the questions, I'll stop here and let anyone interested play around with the app for themselves. 
 
 <iframe src="https://wburton.shinyapps.io/shiny/" style="border: none; width: 1000px; height: 700px"></iframe>
-{% highlight R %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+The code for the shiny application, along with the data pull and manipulation package can be found on github [here]({{"https://github.com/wjburton/Movie_Network"}})
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
