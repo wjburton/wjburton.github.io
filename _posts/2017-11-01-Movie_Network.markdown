@@ -8,7 +8,7 @@ categories: jekyll update
 ### Intro
 This project was supposed to serve as an introduction to Network Analysis and R shiny. The idea was to visualize networks of the cast and crews for specific movie genres and to answer a few questions: Who was the most popular? What are the differences across genres? What are the differences betweeen cast and crew networks?
 
-In the app, each node in the network represents a cast / crew member (depending on what is selected) and a connection  exists if the connected nodes worked on the same movie.
+In the app, each node in the network represents a cast / crew member (depending on what is selected) and a connection exists if two nodes worked on the same movie.
 
 Before answering the initial questions and walking through how it was created, here is the final app:
 <iframe src="https://wburton.shinyapps.io/shiny/" style="border: none; width: 1000px; height: 700px"></iframe>
